@@ -3,10 +3,21 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 class PagesController extends MainController
 {
+    
     public function index(){
-        return view('home',['title'=>'home page']);
+        
+        return view('home', self::$data);
     }
     public function about(){
-        return view('about',['title'=>'about page']);
+        self::$data['title'] = 'about page';
+        return view('about',self::$data);
+    }
+    public function contact(){
+        self::$data['title'] ='contact page';
+        return view('contact',self::$data);
+    }
+    public function shop(){
+        self::$data['title'] ='shop page';
+        return view('shop',self::$data);
     }
 }
