@@ -12,9 +12,7 @@
 */
 
 
-Route::get('/', 'PagesController@foo');
+Route::get('/', 'PagesController@index');
 
-Route::get('/home', function () {
-    return view('test');
-});
+Route::get('about', 'PagesController@about');
 
