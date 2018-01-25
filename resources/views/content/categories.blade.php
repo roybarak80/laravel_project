@@ -18,8 +18,9 @@
 
      <!-- Marketing Icons Section -->
      <div class="row">
+         @if($categories)
      @foreach($categories as $row)
-     
+
 
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
@@ -33,7 +34,9 @@
           </div>
         </div>
      @endforeach
-       
+       @else
+             <p><i>No categories were found...</i></p>
+         @endif
 
      </div>
      <!-- /.row -->

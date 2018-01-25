@@ -15,5 +15,6 @@ Route::get('/', 'PagesController@index');
 Route::get('about', 'PagesController@about');
 Route::get('contact', 'PagesController@contact');
 Route::get('shop', 'ShopController@categories');
-Route::get('shop/{category_url}', 'ShopController@products');
+Route::get('shop/{categorie_url}', 'ShopController@products');
+Route::get('shop/{categorie_url}/{product_url}', 'ShopController@item');
 

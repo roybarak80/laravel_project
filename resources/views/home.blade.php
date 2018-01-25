@@ -2,6 +2,7 @@
 @extends('master')
 
 @section('content')
+
 <h1 class="my-4">Welcome to Modern Business</h1>
 
       <!-- Marketing Icons Section -->
