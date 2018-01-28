@@ -39,5 +39,12 @@ class ShopController extends MainController
 
     }
 
+    public function addToCart()
+    {
+        echo 1234;
+
+
+    }
+
 
 }

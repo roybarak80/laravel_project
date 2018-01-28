@@ -17,4 +17,4 @@ Route::get('contact', 'PagesController@contact');
 Route::get('shop', 'ShopController@categories');
 Route::get('shop/{categorie_url}', 'ShopController@products');
 Route::get('shop/{categorie_url}/{product_url}', 'ShopController@item');
-
+Route::get('shop/add-to-cart','ShopController@addToCart');
