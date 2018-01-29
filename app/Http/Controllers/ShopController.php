@@ -39,12 +39,9 @@ class ShopController extends MainController
 
     }
 
-    public function addToCart()
-    {
-        echo 1234;
+    public function addToCart() {
 
-
+        echo 123;
     }
-
 
 }

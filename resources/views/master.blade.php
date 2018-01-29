@@ -110,7 +110,9 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script>const URL ="{{url('')}}"</script>
+  <script> var BASE_URL = "{{ url('') }}/";
+  var CURRENT_URL = "{{ url()->current()}}";
+  </script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="{{ asset('vendor/jquery/jquery.min.js')}}"></script>
   <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
